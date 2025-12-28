@@ -22,7 +22,6 @@ pipeline {
         }
         stage ('Test') {
             agent {
-                #echo 'test stage'
                 docker {
                     image 'node:18-alpine'
                     reuseNode true
